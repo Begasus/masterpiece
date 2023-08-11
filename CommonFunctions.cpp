@@ -287,8 +287,8 @@ SqlObject::SqlObject(sqlite3_stmt* sqlStatement, const char* errorNumber)
 	int	sqlValue;
 	BString tmpString;
 	sqlErrMsg = 0;
-	BString tmpPath = GetAppDirPath(); // for testing purposes, use local one.
-	//BString tmpPath = GetUserDirPath(); // for publish purposes, use real location
+	//BString tmpPath = GetAppDirPath(); // for testing purposes, use local one.
+	BString tmpPath = GetUserDirPath(); // for publish purposes, use real location
 	if(tmpPath != "-15")
 	{
 		tmpPath += "/MasterPiece.db";
